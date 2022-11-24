@@ -1,0 +1,188 @@
+header {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 2;
+    /* height: 500px; */
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 24px;
+    top: 0;
+    margin: 12px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.now-playing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.playing-title {
+    color: #c7a6da;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.playing-author {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+
+.cd {
+    /* border-radius: 50%; */
+    /* background-color: ; */
+}
+
+.cd img {
+    border-radius: 100%;
+}
+
+.main-function {
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    justify-content: space-between;
+}
+
+.basic-function {
+    margin-top: 40px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pause-song {
+    display: none;
+}
+
+.active {
+    color: #e4a4cf;
+    display: block;
+}
+
+.active-song {
+    background-color: #f16bc5 !important;
+    color: #ffffff;
+}
+
+.disable {
+    display: none;
+}
+
+.playing .play-song {
+    display: none;
+}
+
+.playing .pause-song {
+    display: block;
+}
+
+.control-time {
+    display: flex;
+    margin: 20px 0;
+}
+
+.progress {
+    /* flex: 1; */
+    width: 100%;
+    margin: auto 10px;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The progress itself */
+.progress {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 6px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+.progress:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The progress handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific progress handle width */
+    height: 6px; /* progress handle height */
+    background: #f16bc5; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+.progress::-moz-range-thumb {
+    width: 25px; /* Set a specific progress handle width */
+    height: 25px; /* progress handle height */
+    background: #f16bc5; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.control-time span {
+    font-size: 16px;
+}
+
+.play-list {
+    margin: 540px 28px 0;
+
+}
+
+.play-item {
+    margin: 12px 0;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.play-item img {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 32px 0 12px ;
+}
+
+.play-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.play-item-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.play-item-singer {
+    font-size: 12px;
+    opacity: 0.6;
+}
